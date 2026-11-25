@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "helpscope"
+version = "1.0.0"
+description = "零依赖·离线优先的 CLI 帮助文本解析引擎：--help → JSON 清单 / Agent 工具 Schema / Markdown 用法卡"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "HelpScope Contributors" }]
+keywords = ["cli", "help", "parser", "agent", "llm", "tool-schema", "offline", "zero-dependency"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Software Distribution",
+]
+
+[project.scripts]
+helpscope = "helpscope.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["helpscope*"]
+
+[tool.setuptools.package-data]
+helpscope = ["py.typed"]
