@@ -1,0 +1,31 @@
+usage: pip <command> [options]
+
+Commands:
+  install      Install packages.
+  download     Download packages.
+  uninstall    Uninstall packages.
+  freeze       Output installed packages in requirements format.
+  list         List installed packages.
+
+General Options:
+  -h, --help                          Show help.
+  --debug                             Let unhandled exceptions propagate out the
+                                      faster than normal.
+  --isolated                          Run pip in an isolated mode, ignoring
+                                      environment variables and user configuration.
+  -v, --verbose                       Give more output. Option is additive, and can
+                                      be used up to 3 times.
+  -q, --quiet                         Give less output. Option is additive, and can
+                                      be used up to 3 times (corresponding to
+                                      WARNING, ERROR, and CRITICAL logging levels).
+  --log <path>                        Append verbose logging output to the given file.
+  --exists-action <action>            Default action when a path already exists:
+                                      (s)witch, (i)gnore, (w)ipe, (b)ackup,
+                                      (a)bort.
+
+package_index_options:
+  --index-url <url>                   Base URL of the Python Package Index.
+  --no-index                          Ignore package index (only looking at --find-links
+                                      URLs instead).
+
+If an error occurs, pip will exit with a non-zero exit code.

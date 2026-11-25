@@ -1,0 +1,32 @@
+Usage: ls [OPTION]... [FILE]...
+
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      scale sizes by SIZE before printing them; e.g.,
+                               '--block-size=M' prints sizes in units of
+                               1,048,576 bytes
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime
+  -d, --directory            list directories themselves, not their contents
+  -h, --human-readable       with -l and -s, print sizes in human readable format
+      --full-time            like -l --time-style=full-iso
+  -i, --inode                print the index number of each file
+  -l                         use a long listing format
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -t                         sort by modification time, newest first
+      --help                 display this help and exit
+      --version              output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Exit status:
+  0  if OK,
+  1  if minor problems (e.g., cannot access subdirectory),
+  2  if serious trouble (e.g., cannot access command-line argument).

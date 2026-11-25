@@ -1,0 +1,23 @@
+Usage: docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+  -D, --debug                             Enable debug mode
+  -l, --log-level string                  Set the logging level ("debug", "info",
+                                          "warn", "error", "fatal")
+      --tls                               Use TLS; implied by --tlsverify
+      --tlsverify                         Use TLS and verify the remote
+  -v, --version                           Print version information and quit
+
+Management Commands:
+  container   Manage containers
+  image       Manage images
+  network     Manage networks
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  run         Create and run a new container from an image
+  start       Start one or more stopped containers
